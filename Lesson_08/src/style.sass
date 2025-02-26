@@ -1,0 +1,72 @@
+// Импорты и другие существующие стили...
+
+// Стиль для серого фона
+.grey-background
+  background-color: #f0f0f0
+  padding: 15px
+  border-radius: 8px
+  margin-bottom: 15px
+  
+// Стиль для элементов списка стран с точкой
+.country-item
+  position: relative
+  padding-left: 20px
+  display: flex
+  align-items: center
+  margin-bottom: 10px
+  
+  &:before
+    content: "•"
+    position: absolute
+    left: 0
+    font-size: 20px
+    line-height: 1
+    
+  a
+    margin: 0 10px
+    
+// Стили для формы выбора страны
+.country-form
+  display: flex
+  flex-direction: column
+  
+  h3
+    margin-top: 15px
+    margin-bottom: 5px
+    text-align: left
+    
+  select
+    margin-bottom: 10px
+    
+  button
+    margin-top: 10px
+
+// Стили для навигации с вертикальными ссылками и точками
+.navigation
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  margin-bottom: 20px
+  
+  .nav-item
+    position: relative
+    padding-left: 20px
+    margin-bottom: 8px
+    
+    &:before
+      content: "•"
+      position: absolute
+      left: 0
+      font-size: 20px
+      line-height: 1
+
+// Стили для ширины форм на разных страницах
+.home-page
+  .grey-background
+    width: 400px
+    box-sizing: border-box
+
+.country-details
+  .grey-background, button
+    width: 450px
+    box-sizing: border-box
